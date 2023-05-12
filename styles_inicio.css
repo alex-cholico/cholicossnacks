@@ -26,7 +26,7 @@ nav li {
 nav a {
   color: #fff;
   display: block;
-  padding: 10px 20  px;
+  padding: 23px;
   text-decoration: none;
    z-index: 4
 }
@@ -175,37 +175,18 @@ font-size: 30px;
 max-width: 50%;
 color: #fff;
 text-align: center;
+flex-wrap: wrap;
+text-align: center;
 }
 
 
-
-
-.image-slider {
-  position: relative;
-  text-align: center;
-}
-.slider-container {
+.header2 {
   display: flex;
-  overflow: hidden;
+  flex-wrap: wrap;
   justify-content: center;
 }
-.slider-image {
-  max-width: 22%;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
-}
-.slider-navigation {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.arrow {
-  font-size: 24px;
-  cursor: pointer;
-}
-.arrow-left {
-  margin-right: 10px;
-}
-.arrow-right {
-  margin-left: 10px;
+.image2 {
+max-width: 20%;
+height: auto;
+margin:  10px;
 }
