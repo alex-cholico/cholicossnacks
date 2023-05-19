@@ -1,23 +1,21 @@
-nav { 
+nav {
   color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  color: white;
-  height: 50 50px;
-  padding: 0px;
+  height: 80px; /* Ajusta la altura a 80px */
   box-sizing: content-box;
   text-align: right;
   background-color: 0;
   backdrop-filter: blur(10px);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-} 
+}
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 nav li {
   display: inline-block;
@@ -26,48 +24,44 @@ nav li {
 nav a {
   color: #fff;
   display: block;
-  padding: 10px 20  px;
+  padding: 25px 20px;
   text-decoration: none;
-   z-index: 4
+  z-index: 4;
 }
-nav a:hover {
-  box-sizing: border-box;
-  background-color: #3555;
-   z-index: 4
 
-} /*barra de navegación*/
+nav a:hover {
+  background-color: rgba(43, 101, 101, 0.333);
+  z-index: 3;
+  padding: 25px 20px; /* Ajusta el padding al mismo valor que en 'nav a' */
+}
+
+
 body {
   background-color: #000;
 
 } /*fondo*/
 
 
-h2 {
+body h2 {
   font-size: 36px;
 
   color: white;
   text-align: center;
 }
-a {
-
+body a {
+    top: 0;
   color: white;
-  font-size: 22px;
+  font-size: 150%;
   text-align: center;
-  padding: 25px;
-   z-index: 4
 }
-p {
-  font-size: 26px;
-    font-family: sans-serif;
-  color: white;
-  text-align: center;
-} /*texto*/
 
 
 .logo {
   position: fixed;
+  width: 4%;
+  width: 60px;
   top: 10px;
-  left: 5px;
+  left: 10px;
    z-index: 2
 } /*logo*/
 
@@ -136,3 +130,127 @@ body {
   font-family: "CircularStd", sans-serif;
 }
 /*tipografia*/
+
+.container2 {
+  position: center;
+  align-items: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;  
+}
+
+.post {
+  max-width: 30%;
+  margin: 3;
+}
+
+figure {
+  margin: 10px ;
+}
+
+img {
+  align-items: center;
+  position: center;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-family: "CircularStd", sans-serif;
+}
+
+.header {
+font-size: 30px;
+color: #fff;
+text-align: center;
+padding: auto;
+}
+
+
+.header2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-block-end: 30px;
+}
+.image2 {
+max-width: 20%;
+height: auto;
+margin:  10px;
+}
+
+
+.h3 {
+text-align: center;
+padding: 30px;
+}
+
+footer {
+  background-color: #1B131C;
+  padding: 10px;
+  width: 195vh;
+  height: 32vh;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.datos {
+text-align: right;
+padding: 10px;
+align-content: center;
+
+}
+.datos li {
+  position: relative;
+  top: 0;
+padding: 10px;
+}
+.datos a {
+  position: relative;
+text-decoration: none;
+font-size: 20px;
+padding-right: 20px;
+}
+.hechopor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hechopor p {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  align-content: right;
+  text-align: right;
+  padding-right: 30px;
+}
+.hechopor h1{
+color: #fff;
+text-align: left;
+text-decoration: none;
+font-size: 30px;
+padding-left: 60px;
+}
+
+.madeby {
+  position:absolute; 
+  top: 105px;
+  left: 60px; 
+  width: 250px;
+
+} /*logo*/
+
+.banner {
+  position:absolute; 
+  top: 35px;
+  left: 30%;
+  width: 40%;
+  opacity: 0.3;
+
+}
