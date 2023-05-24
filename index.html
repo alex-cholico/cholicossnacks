@@ -3,7 +3,27 @@
 <html lang="en">
 <title>Cholico´s Snacks</title>
 <script src="script.js"></script>
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '600',
+      width: '1200',
+      videoId: 'ltAjTs8r62w'
+    });
+  }
+</script>
+
 <head> 
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +31,6 @@
     <link rel="stylesheet" type="text/css" href="styles_inicio.css">
 
 </head>
-<script>
-
-
-</script>
 <style>
 
 </style>
@@ -23,7 +39,7 @@
      <section id="inicio">
         <!--Imagen 1-->
   <div class="container">
-  <img src="background.jpg" alt="Imagen principal"> 
+  <img src="background.svg" alt="Imagen principal"> 
 
 </div>
    </section>
@@ -34,7 +50,7 @@
   </div> <!--Logo-->
    <section id="nosotros">
     <div class="container"> 
-  <img src="image_2.jpg" alt="Imagen secundaria"><!--Imagen 2-->
+  <img src="image_2.svg" alt="Imagen secundaria"><!--Imagen 2-->
     </div>
     <div class="vision">
       <img src="section_2.jpg" alt="vision mision valores">
@@ -79,6 +95,11 @@
         <img src="menu_3.jpg" alt="menu_3" class="image2">
         <img src="menu_4.jpg" alt="menu_4" class="image2">
       </div>
+
+      <div style="display: flex; justify-content: center; padding: 20px;">
+        <div id="ytplayer"></div>
+      </div>
+
     </section>
     <section id="contacto" class="section2">
     <footer>
@@ -100,7 +121,7 @@
         </div>
     </div>
       <div class="datos">
-        <li><a>Telefono: +51 348 124 0101</a></li>
+        <li><a>Telefono: +52 348 124 0101</a></li>
         <li><a href="https://www.instagram.com/cholicos_snacks/" target="_blank">Instagram: @cholicos_snacks</a></li>
         <li><a href="https://www.google.com/maps/place/maps+francisco+mora+153+arandas/@20.7034193,-102.3455019,3a,75y,112.32h,90t/data=!3m4!1e1!3m2!1s5KfGkfYAL_r7yvjpnxmdUQ!2e0!4m2!3m1!1s0x84294c78622d4079:0x5e5c44cc67fd93d7?sa=X&ved=2ahUKEwjHwabjyIH_AhVqJkQIHUSfCp8QxB16BAgJEAM" target="_blank">Ubicación: francisco Mora #153</a></li>
       </div>

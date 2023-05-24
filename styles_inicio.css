@@ -4,7 +4,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  height: 80px; /* Ajusta la altura a 80px */
+  height: auto; /* Ajusta la altura a 80px */
   box-sizing: content-box;
   text-align: right;
   background-color: 0;
@@ -37,6 +37,7 @@ nav a:hover {
 
 
 body {
+  height: auto;
   background-color: #000;
 
 } /*fondo*/
@@ -96,6 +97,7 @@ body a {
 .hidden {
   display: none;
 } /*pantalla de carga*/
+
 
 
 .container {
@@ -173,6 +175,7 @@ padding: auto;
 
 
 .header2 {
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -194,7 +197,7 @@ footer {
   background-color: #1B131C;
   padding: 10px;
   width: 195vh;
-  height: 32vh;
+  height: auto;
   justify-content: center;
   position: relative;
   padding: 10px;
@@ -252,5 +255,4 @@ padding-left: 60px;
   left: 30%;
   width: 40%;
   opacity: 0.3;
-
 }
